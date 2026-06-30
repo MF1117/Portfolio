@@ -1,4 +1,6 @@
 config.js
 index.html
 script.js
-styles.css
+style.css
+.gitignore.js
+.nojekyll
