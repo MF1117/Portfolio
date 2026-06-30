@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== BACKGROUND ===== -->
+<div class="page-bg" id="pageBg">
+  <audio id="bgAudio" loop preload="auto"></audio>
+  <video id="pageBgVideo" autoplay muted loop playsinline></video>
+  <button class="bg-audio-toggle" id="bgAudioToggle" aria-label="Toggle audio" title="Toggle audio">🔇</button>
+</div>
+
+<main class="wrap">
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="avatar-wrap">
+        <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+        <span class="status-dot offline"></span>
+      </div>
+      <h1 id="heroName"></h1>
+      <div class="hero-meta">
+        <span id="heroRole"></span>
+        <span class="sep">·</span>
+        <span class="status-pill" id="statusPill">checking status…</span>
+      </div>
+      <a class="now-playing" id="nowPlaying" target="_blank" rel="noopener">
+        <img id="npArt" src="" alt="">
+        <div class="np-bars" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="np-text">
+          <div class="np-song" id="npSong"></div>
+          <div class="np-artist" id="npArtist"></div>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section class="block">
+    <h2 class="heading">About</h2>
+    <div class="panel">
+      <p id="bioText"></p>
+      <div class="stat-row" id="statRow"></div>
+    </div>
+  </section>
+
+  <!-- ===== Projects & Certificates ===== -->
+  <section class="block">
+    <h2 class="heading">Projects &amp; Certificates</h2>
+    <div class="slider-outer">
+      <button class="nav-btn prev" id="navPrev" aria-label="Previous">‹</button>
+      <div class="slider" id="slider"></div>
+      <button class="nav-btn next" id="navNext" aria-label="Next">›</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="block">
+    <h2 class="heading">Contact</h2>
+    <div class="panel contact-panel" id="contactPanel"></div>
+  </section>
+
+  <footer>
+    <span id="footerLine"></span>
+  </footer>
+
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
